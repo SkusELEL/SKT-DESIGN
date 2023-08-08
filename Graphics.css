@@ -1,0 +1,198 @@
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  max-height: fit-content;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+@keyframes UnderLineHide {
+  0%   {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.00) 50%);}
+  6.25%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.075) 50%);}
+  12.5%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.150) 50%);}
+  18.75%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.200) 50%);}
+  25%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.225) 50%);}
+  31.25%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.250) 50%);}
+  37.5%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.275) 50%);}
+  50%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.300) 50%);}
+  56.25%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.275) 50%);}
+  62.5%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.250) 50%);}
+  68.75%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.225) 50%);}
+  75%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.200) 50%);}
+  81.75%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.160) 50%);}
+  87.5% {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.125) 50%);}
+  93.75%  {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.075) 50%);}
+  100% {background-image: linear-gradient(165deg, transparent 0%, hwb(64 0% 0% / 0.00) 50%);}
+}
+
+@keyframes aTextUnderline {
+  0%   {text-decoration: underline rgb(0, 0, 0) 3px;}
+  6.25%  {text-decoration: underline rgb(51, 47, 0) 3px;}
+  12.5%  {text-decoration: underline rgb(92, 86, 0) 3px;}
+  18.75%  {text-decoration: underline rgb(110, 101, 0) 3px;}
+  25%  {text-decoration: underline rgb(168, 157, 0) 3px;}
+  31.25%  {text-decoration: underline rgb(186, 189, 0) 3px;}
+  37.5%  {text-decoration: underline rgb(216, 202, 0) 3px;}
+  50%  {text-decoration: underline rgb(255, 238, 0) 3px;}
+  56.25%  {text-decoration: underline rgb(194, 194, 0) 3px;}
+  62.5%  {text-decoration: underline rgb(151, 151, 0) 3px;}
+  68.75%  {text-decoration: underline rgb(121, 121, 0) 3px;}
+  75%  {text-decoration: underline rgb(114, 112, 0) 3px;}
+  81.75%  {text-decoration: underline rgb(106, 99, 0) 3px;}
+  87.5% {text-decoration: underline rgba(100, 97, 0, 0.541) 3px;}
+  93.75%  {text-decoration: underline rgb(63, 58, 0) 3px;}
+  100% {text-decoration: underline rgb(0, 0, 0) 3px;}
+}
+
+@keyframes aButtons {
+0%  {opacity: 85%;}
+25% {opacity: 75%;}
+50% {opacity: 50%;}
+75% {opacity: 75%;}
+100% {opacity: 85%;}
+}
+
+nav {
+  background-color: #000000;
+  box-shadow: #080808;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(160deg, transparent 0%, hwb(64 0% 0% / 0.000) 50%);
+  animation: UnderLineHide 1.25s reverse 1ms;
+  animation-iteration-count:unset;
+}
+
+nav li {
+  list-style: none;
+}
+
+.nav-logo a {
+  margin-top: 10px;
+  display: block;
+  width: 60px;
+  height: 25px;
+  background-image: url('MainScreenLogo.gif');
+  background-repeat: no-repeat;
+  background-size:contain;
+  cursor: pointer;
+  position: relative;
+  background-position: 100%; 
+  transition: background-position 0.3s; 
+  margin-bottom: 10px;
+}
+
+.nav-logo a:hover {
+  display: block;
+  width: 69px; 
+  height: 25px; 
+  background-image: url('MainScreenLogo.gif');
+  background-position: 75%; 
+  background-repeat: no-repeat;
+  transform-origin: center;
+  background-size: contain; 
+  cursor: pointer;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffd500;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
+  margin-left: 20px;
+}
+
+nav a.underline {
+  text-decoration: underline rgba(0, 0, 0, 0) 3px;
+  animation: aTextUnderline 1.25s reverse 1s;
+  animation-iteration-count:infinite;
+}
+
+.nav-logo a:hover {
+  display: block;
+  width: 69px;
+  height: 25px;
+  background-image: url('MainScreenLogo.gif');
+  background-position: 75%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-content {
+  padding: 0px;
+  display: flex;
+  flex-direction:row;
+  align-items: top center;
+  justify-content: safe center;
+  margin-bottom: 0px;
+  width: auto;
+  height: 1080px;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.main-content li {
+  list-style: none;
+}
+
+.ButtonTwitch {
+  background-image: url(Graphics/TwitchButton.png);
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 150px;
+  opacity: 50%;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  background-color: #000000;
+} 
+
+.ButtonTwitch:hover {
+  background-image: url(Graphics/TwitchButton.png);
+  animation: aButtons infinite 2s reverse 1ms;
+}
+
+.ButtonYoutube{
+  background-image: url(Graphics/YoutubeButtonUnhovered.png);
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  opacity: 50%;
+  background-size: contain;
+  background-color: #000000;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  border: none;
+  cursor: pointer;
+} 
+
+.ButtonYoutube:hover {
+  background-image: url(Graphics/YoutubeButton.png);
+  animation: aButtons infinite 2s reverse 1ms;
+}
+
+footer {
+  background-color: #080808;
+  text-align: center;
+}
